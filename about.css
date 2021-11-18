@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  width: 40px;
+  padding-top: 10px;
+}
+
+.navlist {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  backdrop-filter: blur(2rem);
+  flex-direction: column;
+  justify-content: space-evenly;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+  font-weight: bold;
+}
+
+.navlist li a {
+  color: rgb(14, 8, 8);
+  text-decoration: none;
+}
+
+.about-email p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navlist li a:hover {
+  color: #ec5242;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.closeIcon {
+  position: absolute;
+  right: 7%;
+  top: 0;
+  padding: 20px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.container {
+  background-image: url(images/about-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+  justify-content: center;
+}
+
+.big-text {
+  font-size: 2.5rem;
+  padding: 5px;
+}
+
+.small-text {
+  font-size: 12px;
+  padding: 50px;
+}
+
+.recap {
+  background-color: transparent;
+  padding: 0.9rem 2.25rem;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.recap:hover {
+  background-color: #e5ff0a;
+}
+
+.long-text {
+  padding: 30px 10px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gamescom-p {
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.about-email p {
+  padding-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 3% 0 0;
+}
+
+.past-gamescom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px 20px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.past-gamescom h2 {
+  width: 87%;
+  margin: 20px 0;
+}
+
+.past-gamescom hr {
+  border: none;
+  width: 7%;
+  margin: 0 auto;
+  border-bottom: solid 2px #ec5242;
+}
+
+.past-gamescom p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 12px 0;
+}
+
+.events-container {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.events-container:first-of-type {
+  background-image: url(images/event-1.jpg);
+  background-size: 100vw 100%;
+}
+
+.events-container:last-of-type {
+  background-image: url(images/event-2.jpg);
+  background-size: 100vw 100%;
+}
+
+.last-events {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #ec200e73;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.red-line {
+  background-color: #ec5242;
+  border: 1px solid #ec5242;
+  width: 50px;
+  margin: 10px 0;
+  opacity: 100;
+  align-self: center;
+}
+
+.partners-container {
+  padding-top: 10px;
+}
+
+.partner-cards {
+  box-shadow: 0 0 6px 0;
+  padding: 5px 40px;
+  border-radius: 8px;
+}
+
+.cards-images {
+  width: 150px;
+  height: 80px;
+}
+
+.conection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.conection-links ul li {
+  list-style: none;
+}
+
+.conection-text h3 {
+  margin: 20px 0;
+  color: #ec5242;
+}
+
+.conection-text p {
+  margin: 20px 0;
+}
+
+.conection-links h3 {
+  margin: 20px 0;
+  color: #ec5242;
+}
+
+.social-links-item {
+  display: inline-block;
+  padding: 0 20px 20px 20px;
+}
+
+.copy {
+  margin-top: 20px;
+}
+
+.black {
+  color: black;
+}
+
+.hover:hover {
+  color: #ec5242;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    animation: nav-load 500ms ease-in;
+  }
+
+  .navlist {
+    display: flex;
+    height: 10vh;
+    position: relative;
+    transition: none;
+    transform: none;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .items {
+    font-size: 15px;
+  }
+
+  .logo-img {
+    width: 60px;
+  }
+
+  .navlist li {
+    font-size: 18px;
+  }
+
+  .last-events {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .big-text {
+    font-size: 62px;
+  }
+
+  .small-text {
+    font-size: 20px;
+  }
+
+  .about-email p {
+    font-size: 20px;
+  }
+
+  .partner-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+  }
+
+  .container h4 {
+    width: 70%;
+  }
+}
