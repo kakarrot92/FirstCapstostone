@@ -7,14 +7,14 @@
 >Projects Screenshots
 
 ### Mobile Page
-![screenshot](images/screenshots/Capstone-Mobile.png)
+![screenshot](images/screenshots/Capstone-Mobile.PNG)
 
 ### Hamburger Menu
-![screenshot](images/screenshots/Hamburger-Mobile.png)
+![screenshot](images/screenshots/Hamburger-Mobile.PNG)
 
 
 ### About Pge
-![screenshot](images/screenshots/About-Mobile.png)
+![screenshot](images/screenshots/About-Mobile.PNG)
 
 
 ## Built With
