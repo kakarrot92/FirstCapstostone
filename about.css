@@ -292,6 +292,7 @@ img {
 @media only screen and (min-width: 768px) {
   .logo-img {
     display: block;
+    width: 60px;
   }
 
   nav {
@@ -319,10 +320,6 @@ img {
 
   .items {
     font-size: 15px;
-  }
-
-  .logo-img {
-    width: 60px;
   }
 
   .navlist li {

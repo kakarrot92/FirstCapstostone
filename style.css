@@ -477,7 +477,6 @@ header {
     flex-direction: row;
   }
 
-
   @keyframes nav-load {
     0% {
       transform: translateY(-100%);
