@@ -10,23 +10,43 @@ body {
 }
 
 header {
-  width: 80%;
   margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
+.user-nav {
+  width: 100%;
+  display: none;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #404346;
+}
+
+.top-nav li {
+  padding: 6px 30px 6px 6px;
+  list-style: none;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .logo-img {
   width: 40px;
   padding-top: 10px;
+  display: none;
 }
 
 .navlist {
@@ -74,6 +94,7 @@ img {
   border: none;
   cursor: pointer;
   display: block;
+  padding: 20px;
 }
 
 .bg-image {
@@ -81,10 +102,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 70px;
   height: 100%;
 }
 
@@ -96,10 +113,10 @@ img {
 .main-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 40px;
-  padding: 70px;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px;
+  color: #ec5242;
 }
 
 .hello-text {
@@ -136,14 +153,48 @@ img {
   background-attachment: fixed;
   min-height: 500px;
   padding-top: 30px;
+  text-align: center;
+  height: 100%;
+  color: #fff;
 }
 
-.happening img {
-  width: 26px;
+.items div img {
+  width: 45px;
+  height: 45px;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 60px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
 }
 
 .items {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 100%;
+  background: #4a4e5749;
+  text-align: center;
+  align-items: center;
+}
+
+.items h5 {
+  color: #ec5242;
+  margin: 15px 0 10px;
+}
+
+.items p {
+  width: 60%;
+  font-size: 12px;
+  margin: 12px 0;
 }
 
 .program ul li {
@@ -158,6 +209,9 @@ img {
   flex-direction: column;
   margin-top: 40px;
   align-items: center;
+  width: 100%;
+  background-color: #f8f9f9;
+  padding: 20px 130px;
 }
 
 .img-card {
@@ -168,10 +222,9 @@ img {
 
 .speaker-card {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 5px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
   padding: 40px;
-  background-color: #272a31;
 }
 
 .card-details {
@@ -182,7 +235,6 @@ img {
 .speaker-card-1 {
   padding: 2px;
   border-radius: 8px;
-  color: #fff;
 }
 
 .speaker-card h2 {
@@ -195,30 +247,38 @@ img {
   color: #ec5242;
 }
 
-.partners {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 0;
-}
-
 .partner-text {
   margin: 10px 0;
 }
 
+.partners {
+  padding: 25px 25px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #404346;
+  color: #fff;
+}
+
 .partners-container {
   padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partners-container div img {
+  background: #404346;
 }
 
 .partner-cards {
-  box-shadow: 0 0 6px 0;
   padding: 5px 40px;
-  border-radius: 8px;
 }
 
 .cards-images {
-  width: 150px;
-  height: 80px;
+  width: 80px;
+  height: 50px;
 }
 
 .contact-heading {
@@ -310,6 +370,12 @@ img {
   padding: 0 20px 20px 20px;
 }
 
+.conection-text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 .copy {
   margin-top: 20px;
 }
@@ -323,6 +389,14 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
+  .user-nav {
+    display: block;
+  }
+
+  .logo-img {
+    display: block;
+  }
+
   nav {
     animation: nav-load 500ms ease-in;
   }
@@ -362,7 +436,14 @@ img {
   }
 
   .speaker-card {
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 3fr);
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px 130px;
   }
 
   .items {
@@ -371,13 +452,6 @@ img {
 
   .items img {
     width: 30px;
-  }
-
-  .program {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .list li {
@@ -398,6 +472,11 @@ img {
   .button-form {
     width: 70%;
   }
+
+  .conection-text {
+    flex-direction: row;
+  }
+
 
   @keyframes nav-load {
     0% {

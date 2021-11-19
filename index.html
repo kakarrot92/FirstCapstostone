@@ -12,7 +12,17 @@
 </head>
   <body>
     <header>
+      <div class="user-nav">
+        <ul class="top-nav">
+          <li><a><i class="fab fa-facebook hover white fa-2x"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter hover white fa-2x"></i></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
       <nav class="nav">
+        <img src="images/hamburger.png" class="hamburger" id="hamburger" alt="hamburger menu">
         <div class="logo">
           <a href="index.html"><img class="logo-img" src="images/logo.png" alt="logo icon"></a>
         </div>
@@ -28,14 +38,15 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <img src="images/hamburger.png" class="hamburger" id="hamburger" alt="hamburger menu">
+        
       </nav>
     </header>
     <section class="hero">
       <div class="bg-image">
         <div class="blur">
           <div class="main-text">
-            <h1 class="hello-text">Hello! Gamers</h1>
+            <p>Call for all gamers</p>
+            <h1 class="hello-text">GAMESCOM Event Brno, <br> Czech Republic </h1>
             <div class="big-text">
               <h2 class="event">GAMESCOM FALL 2021</h2>
               <h3 class="date-text">November 15-17</h3>
@@ -46,29 +57,52 @@
       </div>
     </section>
     <section class="program">
+      <div class="main-program">
+        <h2 class="main-heading">Main Program</h2>
+        <hr class="red-line">
+      </div>
       <div class="happening">
-        <ul class="list">
-          <li data-aos="fade-up" class="items">
-            <img src="images/calendar.png" alt=""><br>
+        <div class="list">
+          <div data-aos="fade-up" class="items">
+            <div>
+              <img src="images/calendar.png" alt=""><br>
+            </div>
              <h5>November 17-19</h5>
-          </li>
-          <li data-aos="fade-down" class="items">
-            <img src="images/user.png" alt=""><br>
+             <p>Come join us on this Event,
+               let's mark this weekend and make it great!
+             </p>
+          </div>
+          <div data-aos="fade-down" class="items">
+            <div>
+              <img src="images/user.png" alt=""><br>
+            </div>
            <h5>3500+ &nbsp;Attendees</h5>
-          </li>
-          <li data-aos="fade-up" class="items">
-            <img src="images/globe.png" alt=""><br>
-            <h5>Worldwide</h5>
-          </li>
-          <li data-aos="fade-down" class="items">
-            <img src="images/marketing.png" alt=""><br>
-             <h5>80+ &nbsp;Speakers</h5>
-          </li>
-          <li data-aos="fade-up" class="items">
-            <img src="images/gamepad.png" alt=""><br>
-            <h5>100+ &nbsp;Games</h5>
-          </li>
-        </ul>
+           <p>We have Attendees from all across of world and from big companys!</p>
+          </div>
+          <div data-aos="fade-up" class="items">
+            <div>
+              <img src="images/exhibition.svg" alt=""><br>
+            </div>
+            <h5>New game Projects</h5>
+            <p>There will be showcase of new games coming up this year!</p>
+          </div>
+          <div data-aos="fade-down" class="items">
+            <div>
+              <img src="images/lecture.svg" alt=""><br>
+            </div>
+             <h5>Lecture</h5>
+             <p>Listen to the speakers from various countries about the gaming industry!</p>
+          </div>
+          <div data-aos="fade-up" class="items">
+            <div>
+              <img src="images/gamepad.png" alt=""><br>
+            </div>
+            <h5>Games</h5>
+            <p>Watch gameplay of new games coming this year!
+            
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="speakers">
@@ -82,38 +116,23 @@
         <h2>PARTNERS</h2>
       </div>
       <hr class="red-line">
-      <div class="partner-card-wrap">
-        <div class="partners-container">
-          <div class="partner-cards">
-            <img class="cards-images" src="images/squere.jpg" alt="">
-          </div>
+      <div class="partners-container">
+        <div>
+          <img class="cards-images" src="images/fantastic.png" alt="">
         </div>
-        <div class="partners-container">
-          <div class="partner-cards">
-            <img class="cards-images" src="images/capcom.jpg" alt="">
-          </div>
+        <div>
+          <img class="cards-images" src="images/gamelabs.png" alt="">
         </div>
-        <div class="partners-container">
-          <div class="partner-cards">
-            <img class="cards-images" src="images/infinity.jpg" alt="">
-          </div>
+        <div>
+          <img class="cards-images" src="images/g2a.png" alt="">
         </div>
-        <div class="partners-container">
-          <div class="partner-cards">
-            <img class="cards-images" src="images/sega.jpg" alt="">
-          </div>
+        <div>
+          <img class="cards-images" src="images/dwd.svg" alt="">
         </div>
-        <div class="partners-container">
-          <div class="partner-cards">
-            <img class="cards-images" src="images/bethesda-2.png" alt="">
-          </div>
+        <div>
+          <img class="cards-images" src="images/whitewolf.png" alt="">
         </div>
-        <div class="partners-container">
-          <div class="partner-cards">
-            <img class="cards-images" src="images/bungie.jpg" alt="">
-          </div>
-        </div>
-      </div>
+      </div> 
     </section>
     <section class="contact" id="contact">
       <div class="container-contact">
@@ -153,14 +172,6 @@
                 © 2016-2022
                 GAMESCOM
               </span>
-            </div>
-            <div class="conection-links">
-              <h3>Conect</h3>
-              <ul class="social-links">
-                <li class="social-links-item"><a href=""><i class="fab fa-facebook hover black fa-2x"></i></a></li>
-                <li class="social-links-item"><a href=""><i class="fab fa-twitter hover black fa-2x"></i></a></li>
-                <li class="social-links-item"><a href=""><i class="fab black hover fa-instagram-square fa-2x"></i></a></li>
-              </ul>
             </div>
           </div>
         </div>

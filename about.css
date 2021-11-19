@@ -27,6 +27,7 @@ img {
 .logo-img {
   width: 40px;
   padding-top: 10px;
+  display: none;
 }
 
 .navlist {
@@ -95,14 +96,22 @@ img {
   align-items: center;
   padding-top: 80px;
   text-align: center;
-  height: 100vh;
   color: #fff;
   justify-content: center;
 }
 
+.white {
+  background-color: #fff;
+  width: 80%;
+  color: #ec5242;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .big-text {
   font-size: 2.5rem;
-  padding: 5px;
+  padding: 25px;
 }
 
 .small-text {
@@ -115,6 +124,7 @@ img {
   padding: 0.9rem 2.25rem;
   color: #fff;
   border: 2px solid #fff;
+  margin-top: 30px;
 }
 
 .recap:hover {
@@ -171,17 +181,17 @@ img {
 }
 
 .events-container {
-  width: 250px;
   height: 250px;
   margin: 20px auto;
+  width: 100%;
 }
 
-.events-container:first-of-type {
+.events-1 {
   background-image: url(images/event-1.jpg);
   background-size: 100vw 100%;
 }
 
-.events-container:last-of-type {
+.events-2 {
   background-image: url(images/event-2.jpg);
   background-size: 100vw 100%;
 }
@@ -193,7 +203,8 @@ img {
   flex-direction: column;
 }
 
-.events {
+.events-1,
+.events-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,6 +290,10 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
+  .logo-img {
+    display: block;
+  }
+
   nav {
     animation: nav-load 500ms ease-in;
   }
@@ -316,6 +331,13 @@ img {
 
   .last-events {
     flex-direction: row;
+  }
+
+  .conection-text {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
