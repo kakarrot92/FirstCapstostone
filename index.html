@@ -5,9 +5,182 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Conference</title>
+  <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-  
-</body>
+  <body>
+    <header>
+      <div class="user-nav">
+        <ul class="top-nav">
+          <li><a><i class="fab fa-facebook hover white fa-2x"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter hover white fa-2x"></i></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <nav class="nav">
+        <img src="images/hamburger.png" class="hamburger" id="hamburger" alt="hamburger menu">
+        <div class="logo">
+          <a href="index.html"><img class="logo-img" src="images/logo.png" alt="logo icon"></a>
+        </div>
+        <ul class="navlist">
+          <li><img src="images/close-btn.png" id="close" class="closeIcon" alt="closing icon"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="bg-image">
+        <div class="blur">
+          <div class="main-text">
+            <p>Call for all gamers</p>
+            <h1 class="hello-text">GAMESCOM Event Brno, <br> Czech Republic </h1>
+            <div class="big-text">
+              <h2 class="event">GAMESCOM FALL 2021</h2>
+              <h3 class="date-text">November 15-17</h3>
+            </div>
+            <button type="button" class="buy-tickets">BUY TICKETS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="program">
+      <div class="main-program">
+        <h2 class="main-heading">Main Program</h2>
+        <hr class="red-line">
+      </div>
+      <div class="happening">
+        <div class="list">
+          <div data-aos="fade-up" class="items">
+            <div>
+              <img src="images/calendar.png" alt=""><br>
+            </div>
+             <h5>November 17-19</h5>
+             <p>Come join us on this Event,
+               let's mark this weekend and make it great!
+             </p>
+          </div>
+          <div data-aos="fade-down" class="items">
+            <div>
+              <img src="images/user.png" alt=""><br>
+            </div>
+           <h5>3500+ &nbsp;Attendees</h5>
+           <p>We have Attendees from all across of world and from big companys!</p>
+          </div>
+          <div data-aos="fade-up" class="items">
+            <div>
+              <img src="images/exhibition.svg" alt=""><br>
+            </div>
+            <h5>New game Projects</h5>
+            <p>There will be showcase of new games coming up this year!</p>
+          </div>
+          <div data-aos="fade-down" class="items">
+            <div>
+              <img src="images/lecture.svg" alt=""><br>
+            </div>
+             <h5>Lecture</h5>
+             <p>Listen to the speakers from various countries about the gaming industry!</p>
+          </div>
+          <div data-aos="fade-up" class="items">
+            <div>
+              <img src="images/gamepad.png" alt=""><br>
+            </div>
+            <h5>Games</h5>
+            <p>Watch gameplay of new games coming this year!
+            
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="speakers">
+        <h2>SPEAKERS</h2>
+        <hr class="red-line">
+        <div id="speakers" class="speaker-card">
+        </div>
+    </section>
+    <section class="partners">
+      <div class="partner-text">
+        <h2>PARTNERS</h2>
+      </div>
+      <hr class="red-line">
+      <div class="partners-container">
+        <div>
+          <img class="cards-images" src="images/fantastic.png" alt="">
+        </div>
+        <div>
+          <img class="cards-images" src="images/gamelabs.png" alt="">
+        </div>
+        <div>
+          <img class="cards-images" src="images/g2a.png" alt="">
+        </div>
+        <div>
+          <img class="cards-images" src="images/dwd.svg" alt="">
+        </div>
+        <div>
+          <img class="cards-images" src="images/whitewolf.png" alt="">
+        </div>
+      </div> 
+    </section>
+    <section class="contact" id="contact">
+      <div class="container-contact">
+        <div class="row">
+          <h2 class="contact-heading">Stay in touch with us for more News and Special Offers</h2>
+          <p>GAMESCOM sends occasional emails to our community containing event updates,special offers, 
+            and ways you can get involved. If you want to stay connected, subscribe using the form below!
+          </p>
+          <form action="https://formspree.io/f/mdoyvbwr" id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label for="full-name"></label>
+              <input name="full-name" class="form-field" maxlength="30" placeholder="Full name" id="full-name" type="text">
+            </div>
+            <div class="form-row">
+              <label for="email"></label>
+              <input class="form-field" id="email" name="email" type="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+              <button class="button-form" title="submit-btn" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row-footer">
+          <div class="conection">
+            <div class="conection-text">
+              <h3>GAMESCOM&nbsp;<span class="event-text">Event</span></h3>
+              <p>
+                <strong>Creativity unleashed. Act V</strong>
+                <br>
+                17 - 19 November · Brno, Czech Republic 
+              </p>
+              <span class="copy">
+                © 2016-2022
+                GAMESCOM
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js" type="module"></script>
+    <script>AOS.init({
+      duration: 2000
+    });</script>
+  </body>
 </html>
